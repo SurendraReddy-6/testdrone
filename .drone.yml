@@ -10,7 +10,7 @@ steps:
     secret_key:
       from_secret: secret_key
     repo: 466110168776.dkr.ecr.us-east-1.amazonaws.com/apache2
-    registry: <466110168776>.dkr.ecr.us-east-1.amazonaws.com
+    registry: 466110168776.dkr.ecr.us-east-1.amazonaws.com
 #
 - name: ssh commands
   image: appleboy/drone-ssh
