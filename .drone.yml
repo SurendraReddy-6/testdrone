@@ -1,0 +1,15 @@
+kind: pipeline
+name: default
+type: docker
+steps:
+- name: ssh commands
+  image: appleboy/drone-ssh
+  settings:
+    host: 52.55.153.229
+    username: ubuntu
+    key:
+      from_secret: ssh_key
+    port: 22
+    script:
+      - sudo aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 466110168776.dkr.ecr.us-east-1.amazonaws.com
+      - sudo docker run -dit -p 8080:80 --name apache2 466110168776.dkr.ecr.us-east-1.amazonaws.com/apache2:latest
