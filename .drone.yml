@@ -8,7 +8,7 @@ steps:
     host: 52.55.153.229
     username: ubuntu
     key:
-      from_secret: ssh_key
+      from_secret: ssh-key
     port: 22
     script:
       - sudo aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 466110168776.dkr.ecr.us-east-1.amazonaws.com
