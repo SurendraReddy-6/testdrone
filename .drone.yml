@@ -11,7 +11,7 @@ steps:
     secret_key:
       from_secret: secret_key
     strip_prefix: .
-    source: testdrone/123.txt
+    source: public
     target: /
 - name: ssh commands
   image: appleboy/drone-ssh
