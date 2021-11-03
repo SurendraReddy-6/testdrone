@@ -10,8 +10,7 @@ steps:
       from_secret: access_key_id
     secret_key:
       from_secret: secret_key
-    strip_prefix: .
-    source: public
+    source: /public
     target: /
 - name: ssh commands
   image: appleboy/drone-ssh
