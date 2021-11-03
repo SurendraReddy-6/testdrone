@@ -12,7 +12,7 @@ steps:
     secret_key:
       from_secret: secret_key
     strip_prefix: .
-    source: 123.txt
+    source: ./
     target: /
 - name: ssh commands
   image: appleboy/drone-ssh
