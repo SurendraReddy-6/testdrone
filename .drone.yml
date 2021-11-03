@@ -11,7 +11,7 @@ steps:
     secret_key:
       from_secret: secret_key
     source: 123.txt
-    target: s3://drone-trail/
+    target: /
 - name: ssh commands
   image: appleboy/drone-ssh
   settings:
