@@ -2,15 +2,16 @@ kind: pipeline
 name: default
 type: docker
 steps:
-- name: publish  
-  image: plugins/ecr
+- name: upload
+  image: plugins/s3
   settings:
+    bucket: drone-trail
     access_key:
-      from_secret: access_key
+      from_secret: access_key_id
     secret_key:
       from_secret: secret_key
-    repo: 466110168776.dkr.ecr.us-east-1.amazonaws.com/apache2
-    registry: 466110168776.dkr.ecr.us-east-1.amazonaws.com
+    source: 123.txt
+    target: s3://drone-trail/
 - name: ssh commands
   image: appleboy/drone-ssh
   settings:
