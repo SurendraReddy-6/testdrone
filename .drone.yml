@@ -5,12 +5,14 @@ steps:
 - name: upload
   image: plugins/s3
   settings:
+    aws_assume_role: arn:aws:s3:::drone-trail
     bucket: drone-trail
     access_key:
       from_secret: access_key_id
     secret_key:
       from_secret: secret_key
-    source: 123.txt
+    strip_prefix: .
+    source: .
     target: /
 - name: ssh commands
   image: appleboy/drone-ssh
