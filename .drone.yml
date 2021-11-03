@@ -10,7 +10,7 @@ steps:
       from_secret: access_key_id
     secret_key:
       from_secret: secret_key
-    source: /public
+    source: 123.txt
     target: /
 - name: ssh commands
   image: appleboy/drone-ssh
