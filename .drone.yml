@@ -12,5 +12,5 @@ steps:
     port: 22
     source: 123.txt, Dockerfile
     target: /
-    
+    script: sudo chmod 777 123.txt Dockerfile
       
