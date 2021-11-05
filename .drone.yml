@@ -10,8 +10,8 @@ steps:
     key:
       from_secret: ssh-key
     port: 22
-    script: sudo -i
-    source: 123.txt
+    script: sudo chown ubuntu:ubuntu /home/testdrone.tar.gz
+    source: testdrone.tar.gz
     target: /
     
       
