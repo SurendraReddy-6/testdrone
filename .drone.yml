@@ -13,4 +13,5 @@ steps:
     source: 123.txt, Dockerfile,testdrone.tar
     target: /
     script: 
+      -sudo chomd u+x 123.txt,Dockerfile,testdrone.tar
       - sudo chown ubuntu:ubuntu 
