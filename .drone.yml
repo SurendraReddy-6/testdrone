@@ -2,24 +2,15 @@ kind: pipeline
 name: default
 type: docker
 steps:
-- name: upload
-  image: plugins/s3
-  settings:
-    bucket: drone-trail
-    access_key:
-      from_secret: access_key
-    secret_key:
-      from_secret: secret_key
-    source: 123.txt
-    target: /
-- name: ssh commands
-  image: appleboy/drone-ssh
+- name: scp files
+  image: appleboy/drone-scp
   settings:
     host: 35.173.247.9
-    username: ubuntu
+    user: ubuntu
     key:
       from_secret: ssh-key
     port: 22
-    script:
-      #- ls
+    command_timeout: 2m
+    target: /home/deploy/web
+    source: 123.txt
       
