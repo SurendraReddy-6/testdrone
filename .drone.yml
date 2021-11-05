@@ -13,4 +13,4 @@ steps:
     source: 123.txt, Dockerfile,testdrone.tar
     target: home/
     script: 
-      - sudo chown -R $ubuntu ~/. 
+      - ls 
