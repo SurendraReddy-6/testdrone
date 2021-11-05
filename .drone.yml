@@ -11,7 +11,7 @@ steps:
       from_secret: ssh-key
     port: 22
     source: 123.txt, Dockerfile,testdrone.tar
-    target: /
+    target: /home/
     script: 
-      -sudo chomd u+x 123.txt,Dockerfile,testdrone.tar
+      -sudo chmod +rwx /home
       - sudo chown ubuntu:ubuntu 
