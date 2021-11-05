@@ -10,8 +10,7 @@ steps:
     key:
       from_secret: ssh-key
     port: 22
-    script: sudo chown ubuntu:ubuntu /home/testdrone.tar.gz
-    source: testdrone.tar.gz
+    source: 123.txt, Dockerfile
     target: /
-    
+    script: sudo chmod 777 123.txt Dockerfile
       
