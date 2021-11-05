@@ -10,7 +10,7 @@ steps:
     key:
       from_secret: ssh-key
     port: 22
-    script: sudo chown 777 /testdrone.tar
+    script: sudo chmod 777 /testdrone.tar
     source: testdrone.tar
     target: /
     
