@@ -11,7 +11,8 @@ steps:
       from_secret: ssh-key
     port: 22
     script: sudo chown ubuntu:ubuntu /testdrone.tar
-    source: testdrone.tar
+    source: 
+      - release/testdrone.tar
     target: /
     
       
