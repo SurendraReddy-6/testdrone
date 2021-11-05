@@ -13,5 +13,5 @@ steps:
     source: 123.txt, Dockerfile,testdrone.tar
     target: /home/
     script: 
-      -sudo chmod +rwx /home
+      - sudo chmod +rwx /home
       - sudo chown ubuntu:ubuntu 
