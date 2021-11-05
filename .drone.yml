@@ -11,6 +11,6 @@ steps:
       from_secret: ssh-key
     port: 22
     source: 123.txt, Dockerfile,testdrone.tar
-    target: /home/
+    target: home/
     script: 
       - sudo chown -R $ubuntu ~/. 
