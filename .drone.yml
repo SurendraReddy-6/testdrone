@@ -11,7 +11,7 @@ steps:
       from_secret: ssh-key
     port: 22
     script: sudo -i
-    source: testdrone.tar.gz
+    source: 123.txt
     target: /
     
       
