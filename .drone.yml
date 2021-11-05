@@ -12,6 +12,6 @@ steps:
     port: 22
     script: sudo -i
     source: 123.txt
-    target: /var/www/html
+    target: /home
     
       
