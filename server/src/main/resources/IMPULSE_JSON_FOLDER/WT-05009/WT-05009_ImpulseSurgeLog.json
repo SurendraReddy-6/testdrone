@@ -1,0 +1,503 @@
+{
+  "unit": "WT-05009",
+  "test": "0",
+  "tech": "0",
+  "date": "6/3/2020",
+  "test_floor": "STF",
+  "customername": "NarenPrakash",
+  "base_mva": 24,
+  "namePlateDesignImpedance": 0.0,
+  "bilDto": {
+    "hvLine": {
+      "lineinfoDTO": {
+        "fw": 0,
+        "cw": 0,
+        "swss": 0,
+        "ho": 0,
+        "xo": 0,
+        "yo": 0
+      }
+    },
+    "lvLine": {
+      "lineinfoDTO": {
+        "fw": 250,
+        "cw": 275,
+        "swss": 0,
+        "ho": 0,
+        "xo": 0,
+        "yo": 0
+      }
+    },
+    "tvLine": {
+      "lineinfoDTO": {
+        "fw": 110,
+        "cw": 120,
+        "swss": 0,
+        "ho": 0,
+        "xo": 0,
+        "yo": 0
+      }
+    },
+    "neutral": {
+      "lineinfoDTO": {
+        "fw": 0,
+        "cw": 0,
+        "swss": 0,
+        "ho": 450,
+        "xo": 120,
+        "yo": 0
+      }
+    }
+  },
+  "impulseGenSetupDTO": [
+    {
+      "number": 1,
+      "StagesinSeries": 1,
+      "StagesinParallel": 10,
+      "ROneFront": [
+        {
+          "rCount": 5,
+          "rValue": 5.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 4,
+          "rValue": 6.0
+        },
+        {
+          "rCount": 6,
+          "rValue": 150.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 2,
+      "StagesinSeries": 1,
+      "StagesinParallel": 10,
+      "ROneFront": [
+        {
+          "rCount": 5,
+          "rValue": 22.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 7,
+          "rValue": 6.0
+        },
+        {
+          "rCount": 3,
+          "rValue": 150.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 3,
+      "StagesinSeries": 1,
+      "StagesinParallel": 10,
+      "ROneFront": [
+        {
+          "rCount": 1,
+          "rValue": 45.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 3,
+          "rValue": 150.0
+        },
+        {
+          "rCount": 7,
+          "rValue": 6000.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 4,
+      "StagesinSeries": 5,
+      "StagesinParallel": 2,
+      "ROneFront": [
+        {
+          "rCount": 4,
+          "rValue": 22.0
+        },
+        {
+          "rCount": 1,
+          "rValue": 10.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 7,
+          "rValue": 6000.0
+        },
+        {
+          "rCount": 3,
+          "rValue": 150.0
+        }
+      ],
+      "ROneFrontCount": 2,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 5,
+      "StagesinSeries": 5,
+      "StagesinParallel": 0,
+      "ROneFront": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        },
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneFrontCount": 0,
+      "ROneTailCount": 0
+    },
+    {
+      "number": 6,
+      "StagesinSeries": 5,
+      "StagesinParallel": 0,
+      "ROneFront": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        },
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneFrontCount": 0,
+      "ROneTailCount": 0
+    },
+    {
+      "number": 7,
+      "StagesinSeries": 5,
+      "StagesinParallel": 2,
+      "ROneFront": [
+        {
+          "rCount": 5,
+          "rValue": 22.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 2,
+          "rValue": 6000.0
+        },
+        {
+          "rCount": 8,
+          "rValue": 150.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 8,
+      "StagesinSeries": 2,
+      "StagesinParallel": 5,
+      "ROneFront": [
+        {
+          "rCount": 2,
+          "rValue": 10.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 3,
+          "rValue": 150.0
+        },
+        {
+          "rCount": 7,
+          "rValue": 6000.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 9,
+      "StagesinSeries": 1,
+      "StagesinParallel": 10,
+      "ROneFront": [
+        {
+          "rCount": 5,
+          "rValue": 5.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 5,
+          "rValue": 150.0
+        },
+        {
+          "rCount": 5,
+          "rValue": 6000.0
+        }
+      ],
+      "ROneFrontCount": 1,
+      "ROneTailCount": 2
+    },
+    {
+      "number": 10,
+      "StagesinSeries": 0,
+      "StagesinParallel": 0,
+      "ROneFront": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        },
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneFrontCount": 0,
+      "ROneTailCount": 0
+    },
+    {
+      "number": 11,
+      "StagesinSeries": 0,
+      "StagesinParallel": 0,
+      "ROneFront": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneTail": [
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        },
+        {
+          "rCount": 0,
+          "rValue": 0.0
+        }
+      ],
+      "ROneFrontCount": 0,
+      "ROneTailCount": 0
+    }
+  ],
+  "shotInfo": [
+    {
+      "number": 327,
+      "filename": "H0RFW1",
+      "iBushingTerminals": {
+        "surge": "HO",
+        "ground": "X\u0027S",
+        "current": "H1,2,3"
+      },
+      "iTransformerTaps": {
+        "HVTap": "E",
+        "LVTap": "16R"
+      },
+      "itieTogether": {
+        "value1": "R",
+        "value2": "U"
+      },
+      "dividerMultiplier": 635.8,
+      "iTestResults": {
+        "kv_peak": 232.7,
+        "timetopeak_t1": 1.3,
+        "tailtime": 50.8,
+        "timetoflashover": 0.0,
+        "rateofrise": 0.0,
+        "timetopeak_tp": 0.0,
+        "timeaboveninty": 0.0,
+        "timetozero": 0.0,
+        "rodgap": 0.0,
+        "firingvoltage": 45.0
+      },
+      "impulseGenSetupNumber": 4,
+      "generatorPressureSettings": {
+        "gtnAutoManual": "Auto"
+      },
+      "chopTowerPressureSettings": {},
+      "grounds": 2,
+      "chopStage": 6,
+      "comments": "HV CT 1 PASS"
+    },
+    {
+      "number": 329,
+      "filename": "H0FW1",
+      "iBushingTerminals": {
+        "surge": "HO",
+        "ground": "X\u0027S",
+        "current": "H1,2,3"
+      },
+      "iTransformerTaps": {
+        "HVTap": "E",
+        "LVTap": "16R"
+      },
+      "itieTogether": {
+        "value1": "R",
+        "value2": "U"
+      },
+      "dividerMultiplier": 635.8,
+      "iTestResults": {
+        "kv_peak": 452.3,
+        "timetopeak_t1": 1.2,
+        "tailtime": 51.0,
+        "timetoflashover": 0.0,
+        "rateofrise": 0.0,
+        "timetopeak_tp": 0.0,
+        "timeaboveninty": 0.0,
+        "timetozero": 0.0,
+        "rodgap": 0.0,
+        "firingvoltage": 87.0
+      },
+      "impulseGenSetupNumber": 4,
+      "generatorPressureSettings": {
+        "gtnAutoManual": "Auto"
+      },
+      "chopTowerPressureSettings": {},
+      "grounds": 2,
+      "chopStage": 6,
+      "comments": "HV CT 1 PASS"
+    },
+    {
+      "number": 333,
+      "filename": "H0FW2",
+      "iBushingTerminals": {
+        "surge": "HO",
+        "ground": "X\u0027S",
+        "current": "H1,2,3"
+      },
+      "iTransformerTaps": {
+        "HVTap": "E",
+        "LVTap": "16R"
+      },
+      "itieTogether": {
+        "value1": "R",
+        "value2": "U"
+      },
+      "dividerMultiplier": 635.8,
+      "iTestResults": {
+        "kv_peak": 452.0,
+        "timetopeak_t1": 1.2,
+        "tailtime": 51.1,
+        "timetoflashover": 0.0,
+        "rateofrise": 0.0,
+        "timetopeak_tp": 0.0,
+        "timeaboveninty": 0.0,
+        "timetozero": 0.0,
+        "rodgap": 0.0,
+        "firingvoltage": 87.0
+      },
+      "impulseGenSetupNumber": 4,
+      "generatorPressureSettings": {
+        "gtnAutoManual": "Auto"
+      },
+      "chopTowerPressureSettings": {},
+      "grounds": 2,
+      "chopStage": 6,
+      "comments": "HV CT 1 PASS"
+    },
+    {
+      "number": 337,
+      "filename": "H0FW3",
+      "iBushingTerminals": {
+        "surge": "HO",
+        "ground": "X\u0027S",
+        "current": "H1,2,3"
+      },
+      "iTransformerTaps": {
+        "HVTap": "E",
+        "LVTap": "16R"
+      },
+      "itieTogether": {
+        "value1": "R",
+        "value2": "U"
+      },
+      "dividerMultiplier": 635.8,
+      "iTestResults": {
+        "kv_peak": 452.3,
+        "timetopeak_t1": 1.2,
+        "tailtime": 51.1,
+        "timetoflashover": 0.0,
+        "rateofrise": 0.0,
+        "timetopeak_tp": 0.0,
+        "timeaboveninty": 0.0,
+        "timetozero": 0.0,
+        "rodgap": 0.0,
+        "firingvoltage": 87.0
+      },
+      "impulseGenSetupNumber": 4,
+      "generatorPressureSettings": {
+        "gtnAutoManual": "Auto"
+      },
+      "chopTowerPressureSettings": {},
+      "grounds": 2,
+      "chopStage": 6,
+      "comments": "HV CT 1 PASS"
+    },
+    {
+      "number": 353,
+      "filename": "H1RFW",
+      "iBushingTerminals": {
+        "surge": "H1",
+        "ground": "X\u0027S,H2,H3",
+        "current": "H0"
+      },
+      "iTransformerTaps": {
+        "HVTap": "E",
+        "LVTap": "16R"
+      },
+      "itieTogether": {
+        "value1": "R",
+        "value2": "U"
+      },
+      "dividerMultiplier": 635.8,
+      "iTestResults": {
+        "kv_peak": 452.3,
+        "timetopeak_t1": 1.2,
+        "tailtime": 51.1,
+        "timetoflashover": 0.0,
+        "rateofrise": 0.0,
+        "timetopeak_tp": 0.0,
+        "timeaboveninty": 0.0,
+        "timetozero": 0.0,
+        "rodgap": 0.0,
+        "firingvoltage": 87.0
+      },
+      "impulseGenSetupNumber": 4,
+      "generatorPressureSettings": {
+        "gtnAutoManual": "Auto"
+      },
+      "chopTowerPressureSettings": {},
+      "grounds": 2,
+      "chopStage": 6,
+      "comments": "HV CT 1 PASS"
+    }
+  ]
+}
