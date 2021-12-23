@@ -1,16 +1,26 @@
-kind: pipeline
-name: default
-type: docker
+kind: pipeline 
+name: default 
+type: docker 
 steps:
-- name: scp files
-  image: appleboy/drone-scp
+- name: publish  
+  image: plugins/ecr
   settings:
-    host: 35.173.247.9
-    user: ubuntu
-    key:
-      from_secret: ssh-key
+    access_key:
+      from_secret: aws_access_key_id
+    secret_key:
+      from_secret: aws_secret_access_key
+    repo: 301032990450.dkr.ecr.us-east-1.amazonaws.com/drone-ecr
+    registry: 301032990450.dkr.ecr.us-east-1.amazonaws.com
+- name: ssh commands
+  image: appleboy/drone-ssh
+  settings:
+    host: 54.175.238.108
+    username: ubuntu
     port: 22
-    source: 123.txt, Dockerfile,testdrone.tar, file24
-    target: home/
-    script: 
-      - ls 
+    key:
+      from_secret: ssh_key
+      script:
+        - sudo chown ubuntu:ubuntu /var/run/docker.sock
+        - sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 301032990450.dkr.ecr.us-east-1.amazonaws.com
+        - sudo docker pull 301032990450.dkr.ecr.us-east-1.amazonaws.com/apacheimage:latest
+        - sudo docker run -idt -p 8080:80 --name apache 301032990450.dkr.ecr.us-east-1.amazonaws.com/apacheimage:latest
