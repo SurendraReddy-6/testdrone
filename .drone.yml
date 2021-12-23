@@ -15,11 +15,11 @@ steps:
 - name: ssh commands
   image: appleboy/drone-ssh
   settings:
-    host: 3.94.88.65
+    host: 100.26.106.230
     username: ubuntu
     port: 22
     key:
-      from_secret: ssh_key
+      from_secret: ssh-key
       script:
         - sudo chown ubuntu:ubuntu /var/run/docker.sock
         - sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 613098030734.dkr.ecr.us-east-1.amazonaws.com
