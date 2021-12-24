@@ -25,4 +25,3 @@ steps:
         - sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 613098030734.dkr.ecr.us-east-1.amazonaws.com
         - sudo docker pull 613098030734.dkr.ecr.us-east-1.amazonaws.com/droneimage:latest
         - sudo docker run -idt -p 8080:80 --name apache 613098030734.dkr.ecr.us-east-1.amazonaws.com/droneimage:latest
-        - ls
