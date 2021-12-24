@@ -1,8 +1,15 @@
-FROM ubuntu
-ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update
-RUN apt-get install apache2 -y
-RUN apt-get install openjdk-8-jdk -y
-ENTRYPOINT ["/usr/sbin/apache2ctl"]
-EXPOSE 80
-CMD ["-D","FOREGROUND"]
+FROM surendra268/maven-java
+
+RUN mkdir /root/tvm-server
+
+WORKDIR /root/tvm-server/
+
+COPY . .
+
+RUN mvn clean install
+
+RUN mv target/vip-0.0.1-SNAPSHOT.jar ./
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "vip-0.0.1-SNAPSHOT.jar"]
