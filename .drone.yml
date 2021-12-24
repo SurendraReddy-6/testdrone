@@ -1,8 +1,9 @@
-kind: pipeline 
-name: default 
-type: docker 
+---
+kind: pipeline
+name: default
+type: kubernetes
 steps:
-- name: publish  
+- name: publish
   image: plugins/ecr
   settings:
     access_key:
@@ -11,16 +12,22 @@ steps:
       from_secret: aws_secret_access_key
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
-- name: ssh commands
-  image: appleboy/drone-ssh
-  settings:
-    host: 3.94.88.65
-    username: ubuntu
-    port: 22
-    key:
-      from_secret: ssh_key
-      script:
-        - sudo chown ubuntu:ubuntu /var/run/docker.sock
-        - sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 613098030734.dkr.ecr.us-east-1.amazonaws.com
-        - sudo docker pull 613098030734.dkr.ecr.us-east-1.amazonaws.com/apacheimage:latest
-        - sudo docker run -idt -p 8080:80 --name apache 613098030734.dkr.ecr.us-east-1.amazonaws.com/apacheimage:latest
+- name: Helm upgrade
+  image: ramalingam81/aws-kubectl-helm-kops
+  environment:
+    KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
+    AWS_ACCESS_KEY_ID:
+      from_secret: aws_access_key_id
+    AWS_SECRET_ACCESS_KEY:
+      from_secret: aws_secret_access_key
+  commands:
+    - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
+    - chmod 600 /root/.kube/config
+    - kubectl config set-context $(kubectl config current-context) --namespace=tvm
+    - kubectl get deployments -n tvm -o wide
+    - helm list
+    #- helm history tvm-api
+    #- helm upgrade tvm-api ./tvm-api/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
+    - helm install tvm-api ./tvm-api-helm/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
+    - helm history tvm-api
+    - kubectl get deployments tvm-api -o wide
