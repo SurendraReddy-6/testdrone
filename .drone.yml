@@ -29,6 +29,7 @@ steps:
     - kubectl config set-context $(kubectl config current-context) --namespace=tvm
     - kubectl get deployments -n tvm -o wide
     - helm list
+    - mkdir ./tvm-api-helm
     #- helm history tvm-api
     #- helm upgrade tvm-api ./tvm-api/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
     - helm install tvm-api ./tvm-api-helm/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
