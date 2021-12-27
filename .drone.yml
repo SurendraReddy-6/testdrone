@@ -34,3 +34,4 @@ steps:
     - helm install tvm-api ./tvm-api-helm/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
     - helm history tvm-api
     - kubectl get deployments tvm-api -o wide
+    
