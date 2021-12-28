@@ -8,7 +8,7 @@ COPY . .
 
 RUN cd server
 
-RUN  chown +x ./gradlew
+RUN  chmod +x ./gradlew
 
 RUN ./gradlew clean build
 
