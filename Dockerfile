@@ -8,6 +8,8 @@ COPY . .
 
 RUN chmod +x ./server/gradlew
 
+RUN cd server
+
 RUN ./server/gradlew build
 
 RUN mv ./server/build/libs/server.jar ./
