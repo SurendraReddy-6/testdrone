@@ -10,6 +10,9 @@ steps:
       from_secret: aws_access_key_id
     secret_key:
       from_secret: aws_secret_access_key
+    tags:
+      - latest
+      - build-v${DRONE_BUILD_NUMBER}
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
 - name: Helm upgrade
@@ -26,8 +29,10 @@ steps:
     - kubectl config set-context $(kubectl config current-context) --namespace=tvm
     - kubectl get deployments -n tvm -o wide
     - helm list
+    - mkdir ./tvm-api-helm
     #- helm history tvm-api
     #- helm upgrade tvm-api ./tvm-api/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
     - helm install tvm-api ./tvm-api-helm/ --set image.tag=build-v${DRONE_BUILD_NUMBER}
     - helm history tvm-api
     - kubectl get deployments tvm-api -o wide
+    
