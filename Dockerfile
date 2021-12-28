@@ -6,19 +6,15 @@ WORKDIR /root/TDMS-api/
 
 COPY . .
 
-RUN cd server
+RUN chmod +x ./server/gradlew
 
-RUN ls
+RUN ./server/gradlew clean build
 
-RUN chmod +x gradlew
+RUN mv ./server/build/libs/server.jar ./
 
-RUN gradlew clean build
+RUN mv ./server/build/libs/server-plain.jar ./
 
-RUN mv build/libs/server.jar ./
-
-RUN mv build/libs/server-plain.jar ./
-
-RUN nohup java -jar build/libs/server.jar > /tmp/tx-server.log 2>&1 &
+RUN nohup java -jar ./server/build/libs/server.jar > /tmp/tx-server.log 2>&1 &
 
 EXPOSE 8080
 
