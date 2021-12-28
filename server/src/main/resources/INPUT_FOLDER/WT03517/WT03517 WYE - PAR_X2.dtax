@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataModel-R2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" apparatus-note="{\rtf1\ansi\ansicpg1252\uc1\deff0{\fonttbl&#xD;&#xA;{\f0\fswiss\fcharset0\fprq2Arial;}&#xD;&#xA;{\f1\froman\fcharset2\fprq2Symbol;}}&#xD;&#xA;{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}&#xD;&#xA;{\stylesheet{\s0\itap0\nowidctlpar\f0\fs24[Normal];}{\*\cs10\additive Default ParagraphFont;}}&#xD;&#xA;{\*\generator TX_RTF3214.0.520.501;}&#xD;&#xA;\deftab1134\paperw12240\paperh15840\margl1440\margt1440\margr1440\margb1440\widowctrl\formshade\sectd&#xD;&#xA;\headery720\footery720\pgwsxn12240\pghsxn15840\marglsxn1440\margtsxn1440\margrsxn1440\margbsxn1440\pard\itap0\nowidctlpar\plain\f0\fs20 \par }" created-by-version="6.3.7.0006" modified-by-version="6.3.7.0006">
+  <external-system-properties />
+  <ApparatusType>TwoWindingTransformer</ApparatusType>
+  <two-winding-transformer-nameplate year-mfg="2017" apparatus-type="TwoWindingTransformer" mfr="Waukesha" mfr-location="" serial-num="WT03517" special-id="" config="Y_Y" class="ONAN_ONAF_ONAF" coolant="Oil" tanktype="N2BLANKETED" weight-units="LB" phases="Three" volume-units="UG" Va-units="MVA" hv-winding="Wye" lv-winding="Wye" tertiary-winding="Undefined" phase-configuration="InternallyConnected" HVWindingImage="WyeLeftWithNeutral" LVWindingImage="WyeLeftWithNeutral" TertiaryWindingImage="Undefined" HVWindingLine="LineToLine" LVWindingLine="LineToLine" TertiaryWindingLine="LineToLine" oil-volume="7100" Va-0="15" Va-1="20" Va-2="25" BIL="350" weight="149600" kV-0="69" kV-1="13.8">
+    <bushing-nameplates>
+      <bushing-nameplate id="30627031-1428-41ec-b9da-553342b65e85" year-mfg="-2147483648" tap="" style="" drwg="" other="" so-num="" bushing-serial-num="1" termination-id="" mfr="" type="" location="" class="" catalog-num="" status="InService" replacement-date-utc="0001-01-01 00:00:00">
+        <bushing-dimensions length-units="" />
+        <bushing-voltage>Undefined</bushing-voltage>
+      </bushing-nameplate>
+      <bushing-nameplate id="03d0b4cb-3c19-4eb5-a080-af6aa17a2bc3" year-mfg="-2147483648" tap="" style="" drwg="" other="" so-num="" bushing-serial-num="2" termination-id="" mfr="" type="" location="" class="" catalog-num="" status="InService" replacement-date-utc="0001-01-01 00:00:00">
+        <bushing-dimensions length-units="" />
+        <bushing-voltage>Undefined</bushing-voltage>
+      </bushing-nameplate>
+      <bushing-nameplate id="76b18eb3-229a-4854-86e8-440c3594289a" year-mfg="-2147483648" tap="" style="" drwg="" other="" so-num="" bushing-serial-num="3" termination-id="" mfr="" type="" location="" class="" catalog-num="" status="InService" replacement-date-utc="0001-01-01 00:00:00">
+        <bushing-dimensions length-units="" />
+        <bushing-voltage>Undefined</bushing-voltage>
+      </bushing-nameplate>
+      <bushing-nameplate id="1ff762c4-ec16-4cc7-97ba-a135286d374e" year-mfg="-2147483648" tap="" style="" drwg="" other="" so-num="" bushing-serial-num="0" termination-id="" mfr="" type="" location="" class="" catalog-num="" status="InService" replacement-date-utc="0001-01-01 00:00:00">
+        <bushing-dimensions length-units="" />
+        <bushing-voltage>Undefined</bushing-voltage>
+      </bushing-nameplate>
+    </bushing-nameplates>
+    <arrester-nameplates />
+    <leakage-reactance-nameplates />
+    <tapchanger-nameplates>
+      <tapchanger-nameplate id="2ccaee1d-1503-44f7-986c-795904d5e9fb" line-id="" tapchanger-type="DETC" description="DETC" mfr="" type="" steps="" boost="" buck="" oil-volume="-1.7976931348623157E+308" naming-preference="DETCAlpha" />
+      <tapchanger-nameplate id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" line-id="" tapchanger-type="LTC" description="OnLine" mfr="" type="" steps="" boost="" buck="" oil-volume="-1.7976931348623157E+308" naming-preference="LTC16Alpha" />
+    </tapchanger-nameplates>
+    <physical-layout />
+  </two-winding-transformer-nameplate>
+  <dta-sessions>
+    <dta-session current-timezone="Central Daylight Time" utc-offset-minutes="-300" location="Waukesha" division="1" company="SPX Transformer Solutions" cct-designation="" session-note="" session-created-date-utc="2017-08-27 12:36:18" first-test-date-utc="2017-08-27 12:45:25" last-test-date-utc="2017-08-27 13:13:10">
+      <two-winding-transformer>
+        <admin-data copies="" top_sn="" tested-by="2352" retest-date-utc="0001-01-01 00:00:00" check-date-utc="0001-01-01 00:00:00" checked-by="" wo="" bottom-sn="" po-num="" insurance-book="" travel-time="" duration="" last-date-utc="0001-01-01 00:00:00" last-sheet="" test-set="" reason="" sheet-num="" crew-size="3" counter-1="-2147483648" counter-2="-2147483648" counter-3="-2147483648" resonator-counter="" resonator-date-tested-utc="0001-01-01 00:00:00" />
+        <test-conditions weather="Undefined" internal-temp="-1.7976931348623157E+308" />
+        <bushing-test-set />
+        <exciting-current-test-set>
+          <exciting-current-test detc="2" ltc="32" detc-id="2ccaee1d-1503-44f7-986c-795904d5e9fb" ltc-id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" include-in-plot="true">
+            <iwc-data m-mtrL="74.8440846800804" w-mtrL="595.408386230469" m-mtrR="74.8440846800804" w-mtrR="595.408386230469" />
+            <iwc-data m-mtrL="55.3090907633305" w-mtrL="443.312347412109" m-mtrR="55.3090907633305" w-mtrR="443.312347412109" />
+            <iwc-data m-mtrL="74.0463435649872" w-mtrL="590.127380371094" m-mtrR="74.0463435649872" w-mtrR="590.127380371094" />
+            <exciting-current-fields date-tested-utc="2017-08-27 13:06:00" rating-expert-system="Unrated" rating-tester="Unrated" message-expert-system="Expert System requires three phases for analysis to be performed. Continue testing, making sure to use the same line.&#xD;&#xA;" test-kV="10" mA-1="74.844084680080414" mA-2="55.30909076333046" mA-3="74.046343564987183" watts-1="595.40838623046875" watts-2="443.31234741210938" watts-3="590.12738037109375" actualkv-1="10.013340950012207" actualkv-2="10.01014518737793" actualkv-3="10.010764122009277" l-or-c-1="L" l-or-c-2="L" l-or-c-3="L" winding-id="" winding-tap="" />
+          </exciting-current-test>
+          <exciting-current-test detc="2" ltc="24" detc-id="2ccaee1d-1503-44f7-986c-795904d5e9fb" ltc-id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" include-in-plot="true">
+            <iwc-data m-mtrL="63.8842806220055" w-mtrL="513.824462890625" m-mtrR="63.8842806220055" w-mtrR="513.824462890625" />
+            <iwc-data m-mtrL="47.2982302308083" w-mtrL="384.053833007813" m-mtrR="47.2982302308083" w-mtrR="384.053833007813" />
+            <iwc-data m-mtrL="63.5897293686867" w-mtrL="511.863403320313" m-mtrR="63.5897293686867" w-mtrR="511.863403320313" />
+            <exciting-current-fields date-tested-utc="2017-08-27 13:07:44" rating-expert-system="Unrated" rating-tester="Unrated" test-kV="10" mA-1="63.884280622005463" mA-2="47.298230230808258" mA-3="63.589729368686676" watts-1="513.824462890625" watts-2="384.0538330078125" watts-3="511.8634033203125" actualkv-1="10.006509780883789" actualkv-2="10.010910987854004" actualkv-3="10.009697914123535" l-or-c-1="L" l-or-c-2="L" l-or-c-3="L" winding-id="" winding-tap="" />
+          </exciting-current-test>
+          <exciting-current-test detc="2" ltc="16" detc-id="2ccaee1d-1503-44f7-986c-795904d5e9fb" ltc-id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" include-in-plot="true">
+            <iwc-data m-mtrL="59.5556125044823" w-mtrL="484.8798828125" m-mtrR="59.5556125044823" w-mtrR="484.8798828125" />
+            <iwc-data m-mtrL="44.1819466650486" w-mtrL="362.573852539063" m-mtrR="44.1819466650486" w-mtrR="362.573852539063" />
+            <iwc-data m-mtrL="59.2681430280209" w-mtrL="483.301300048828" m-mtrR="59.2681430280209" w-mtrR="483.301300048828" />
+            <exciting-current-fields date-tested-utc="2017-08-27 13:09:08" rating-expert-system="Unrated" rating-tester="Unrated" test-kV="10" mA-1="59.555612504482269" mA-2="44.1819466650486" mA-3="59.268143028020859" watts-1="484.8798828125" watts-2="362.5738525390625" watts-3="483.30130004882812" actualkv-1="10.009367942810059" actualkv-2="10.0110445022583" actualkv-3="10.008519172668457" l-or-c-1="L" l-or-c-2="L" l-or-c-3="L" winding-id="" winding-tap="" />
+          </exciting-current-test>
+          <exciting-current-test detc="2" ltc="8" detc-id="2ccaee1d-1503-44f7-986c-795904d5e9fb" ltc-id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" include-in-plot="true">
+            <iwc-data m-mtrL="63.76613676548" w-mtrL="513.352172851563" m-mtrR="63.76613676548" w-mtrR="513.352172851563" />
+            <iwc-data m-mtrL="47.2716018557549" w-mtrL="384.114990234375" m-mtrR="47.2716018557549" w-mtrR="384.114990234375" />
+            <iwc-data m-mtrL="63.4393841028214" w-mtrL="511.8935546875" m-mtrR="63.4393841028214" w-mtrR="511.8935546875" />
+            <exciting-current-fields date-tested-utc="2017-08-27 13:10:56" rating-expert-system="Unrated" rating-tester="Unrated" test-kV="10" mA-1="63.766136765480042" mA-2="47.271601855754852" mA-3="63.43938410282135" watts-1="513.3521728515625" watts-2="384.114990234375" watts-3="511.8935546875" actualkv-1="10.009817123413086" actualkv-2="10.01097297668457" actualkv-3="10.009757995605469" l-or-c-1="L" l-or-c-2="L" l-or-c-3="L" winding-id="" winding-tap="" />
+          </exciting-current-test>
+          <exciting-current-test detc="2" ltc="0" detc-id="2ccaee1d-1503-44f7-986c-795904d5e9fb" ltc-id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" include-in-plot="true">
+            <iwc-data m-mtrL="73.7000852823257" w-mtrL="590.31396484375" m-mtrR="73.7000852823257" w-mtrR="590.31396484375" />
+            <iwc-data m-mtrL="55.1495961844921" w-mtrL="443.758575439453" m-mtrR="55.1495961844921" w-mtrR="443.758575439453" />
+            <iwc-data m-mtrL="73.7869665026665" w-mtrL="590.813659667969" m-mtrR="73.7869665026665" w-mtrR="590.813659667969" />
+            <exciting-current-fields date-tested-utc="2017-08-27 13:13:10" rating-expert-system="Unrated" rating-tester="Unrated" test-kV="10" mA-1="73.700085282325745" mA-2="55.149596184492111" mA-3="73.786966502666473" watts-1="590.31396484375" watts-2="443.75857543945312" watts-3="590.81365966796875" actualkv-1="10.009315490722656" actualkv-2="10.013073921203613" actualkv-3="10.004993438720703" l-or-c-1="L" l-or-c-2="L" l-or-c-3="L" winding-id="" winding-tap="" />
+          </exciting-current-test>
+        </exciting-current-test-set>
+        <bushing-designations>
+          <bushing id="30627031-1428-41ec-b9da-553342b65e85" serial-number="1" designation="H1" termination-phase="" status="InService" />
+          <bushing id="03d0b4cb-3c19-4eb5-a080-af6aa17a2bc3" serial-number="2" designation="H2" termination-phase="" status="InService" />
+          <bushing id="76b18eb3-229a-4854-86e8-440c3594289a" serial-number="3" designation="H3" termination-phase="" status="InService" />
+          <bushing id="1ff762c4-ec16-4cc7-97ba-a135286d374e" serial-number="0" designation="H0" termination-phase="" status="InService" />
+        </bushing-designations>
+        <arresters />
+        <surge-arrester-test-set />
+        <hot-collar-test-set />
+        <insulatingfluid-test-set />
+        <diagnostic-test-set />
+        <turns-ratio-test-set />
+        <winding-resistance-test-set />
+        <winding-resistance-winding-detail manufacturer="" serial-number="" />
+        <manual-data ir-mfr="" ir-sn="">
+          <manual-connection-test>
+            <manual-connection-fields connection="HiToLoEarth" />
+          </manual-connection-test>
+          <manual-connection-test>
+            <manual-connection-fields connection="HiToEarthGuardLo" />
+          </manual-connection-test>
+          <manual-connection-test>
+            <manual-connection-fields connection="LoToHiEarth" />
+          </manual-connection-test>
+          <manual-connection-test>
+            <manual-connection-fields connection="LoToEarthGuardHi" />
+          </manual-connection-test>
+          <manual-connection-test>
+            <manual-connection-fields connection="HiToLoGuardEarth" />
+          </manual-connection-test>
+          <manual-connection-test>
+            <manual-connection-fields connection="CoreToEarth" />
+          </manual-connection-test>
+        </manual-data>
+        <water-content description="Undefined" />
+        <tapchangers>
+          <tapchanger id="2ccaee1d-1503-44f7-986c-795904d5e9fb" line_id="" position_found="" position_left="" />
+          <tapchanger id="5fe75d4a-bf75-4dbe-9423-578ce96ca0e5" line_id="" position_found="" position_left="" />
+        </tapchangers>
+        <insulating-fluid-oil-quality-set />
+        <dissolved-gas />
+        <turns-ratio-connections>
+          <ratio-connection-fields conn-1="" conn-2="" conn-3="" conn-4="" conn-5="" conn-6="" conn-7="" conn-8="" conn-9="" conn-10="" conn-11="" conn-12="" />
+        </turns-ratio-connections>
+        <turns-ratio-nameplate>
+          <turns-ratio-nameplate-fields mfr="" serial-num="" rtt-accuracy="" />
+        </turns-ratio-nameplate>
+        <exciting-current-connections conn-1="H1" conn-2="H0" conn-3="H2" conn-4="H0" conn-5="H3" conn-6="H0" circuit-description="CIRC_UST_RB" rated-volts="-1.7976931348623157E+308" />
+        <exciting-current-test-notes-rtf />
+        <doble-ratio-test-set />
+        <doble-ratio-cap-windings>
+          <iwc-data />
+          <doble-ratio-cap-winding-fields rtt-accuracy="" date-tested-utc="0001-01-01 00:00:00" />
+        </doble-ratio-cap-windings>
+        <doble-ratio-connections>
+          <ratio-connection-fields conn-1="" conn-2="" conn-3="" conn-4="" conn-5="" conn-6="" conn-7="" conn-8="" conn-9="" conn-10="" conn-11="" conn-12="" />
+        </doble-ratio-connections>
+        <doble-ratio-test-notes-rtf />
+        <bushing-test-notes-rtf />
+        <arrester-test-notes-rtf />
+        <insulatingfluid-test-notes-rtf />
+        <transformer-layout ltc-1="" ltc-2="" ltc-3="" ltc-4="" ltc-5="" ltc-6="" ltc-7="" ltc-8="" ltc-9="" ltc-10="" ltc-11="" ltc-12="" ltc-13="" ltc-14="" ltc-15="" ltc-16="" ltc_pos="" detc-pos="" et-core="C3Legged" et-alt="Undefined" />
+        <gas-space />
+        <leakage-reactance-3phase-test-set />
+        <leakage-reactance-per-phase-hi-test-set />
+        <leakage-reactance-per-phase-lo-test-set />
+        <leakage-reactance-single-phase-test-set />
+        <overall-test-set>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="1" insulation="CH_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="2" insulation="CH">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="3" insulation="CHL_UST">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="4" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="5" insulation="CL_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="6" insulation="CL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="7" insulation="CHL_UST">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="8" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="9" insulation="CH_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="10" insulation="CH">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="11" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="12" insulation="CH_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="13" insulation="CH">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="14" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="15" insulation="CH_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="16" insulation="CH">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="17" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="18" insulation="CL_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="19" insulation="CL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="20" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="21" insulation="CL_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="22" insulation="CL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="23" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="24" insulation="CL_CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="25" insulation="CL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="26" insulation="CHL">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="27" insulation="CH_PRIME">
+            <iwc-data />
+          </overall-test>
+          <overall-test date-tested-utc="0001-01-01 00:00:00" rating-expert-system="Unrated" rating-tester="Unrated" line-id="28" insulation="CL_PRIME">
+            <iwc-data />
+          </overall-test>
+        </overall-test-set>
+        <overall-test-notes-rtf />
+        <manual-data-test-notes-rtf />
+      </two-winding-transformer>
+    </dta-session>
+  </dta-sessions>
+  <copyright-notice>Copyright © 2008 - 2015 Doble Engineering Company. All rights reserved.
+This program is protected by U.S. and international copyright laws.</copyright-notice>
+</DataModel-R2>
