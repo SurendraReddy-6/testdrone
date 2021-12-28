@@ -6,11 +6,11 @@ WORKDIR /root/TDMS-api/
 
 COPY . .
 
-RUN  chown +x ./gradlew
+RUN  chown +x .server/gradlew
 
 RUN ./gradlew clean build
 
- RUN cd server
+RUN cd server
 
 RUN mv build/libs/server.jar ./
 
