@@ -1,14 +1,22 @@
-FROM surendra268/maven-java
+FROM surendra268/gradlew-java
 
-RUN mkdir /root/tvm-server
+RUN mkdir /root/TDMS-api
 
-WORKDIR /root/tvm-server/
+WORKDIR /root/TDMS-api/
 
 COPY . .
 
-RUN mvn clean install
+RUN  chown +x ./gradlew
 
-RUN mv target/vip-0.0.1-SNAPSHOT.jar ./
+RUN ./gradlew clean build
+
+ RUN cd server
+
+RUN mv build/libs/server.jar ./
+
+RUN mv build/libs/server-plain.jar ./
+
+RUN nohup java -jar build/libs/server.jar > /tmp/tx-server.log 2>&1 &
 
 EXPOSE 8080
 
