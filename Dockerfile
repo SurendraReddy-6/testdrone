@@ -6,8 +6,6 @@ WORKDIR /root/TDMS-api/
 
 COPY . .
 
-RUN npm install && npm install Dependencies
-
 WORKDIR /root/TDMS-api/server/
 
 EXPOSE 8080
