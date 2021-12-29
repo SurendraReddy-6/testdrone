@@ -3,8 +3,8 @@ kind: pipeline
 name: default
 type: kubernetes
 steps:
-- name: build-news-api
-  image: surendra268/gradlew-java-node_js
+- name: build-new-api
+  image: ramalingam81/ubuntu-java8:node-js
   commands:
     - apt install nodejs -y
     - cd server/
