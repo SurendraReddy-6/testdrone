@@ -6,6 +6,7 @@ steps:
 - name: build-news-api
   image: surendra268/gradlew-java-node_js
   commands:
+    - sudo npm install
     - cd server/
     - chmod +x ./gradlew
     - ./gradlew clean build
