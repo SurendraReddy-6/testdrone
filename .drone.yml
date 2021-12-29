@@ -4,7 +4,7 @@ name: default
 type: kubernetes
 steps:
 - name: build-news-api
-  image: ramalingam81/ubuntu-java8:node-js
+  image: surendra268/gradlew-java-node_js
   commands:
     - cd server/
     - chmod +x ./gradlew
