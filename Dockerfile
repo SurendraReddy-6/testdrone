@@ -1,14 +1,12 @@
-FROM surendra268/maven-java
+FROM surendra268/gradlew-java
 
-RUN mkdir /root/tvm-server
+RUN mkdir /root/TDMS-api
 
-WORKDIR /root/tvm-server/
+WORKDIR /root/TDMS-api/
 
 COPY . .
 
-RUN mvn clean install
-
-RUN mv target/vip-0.0.1-SNAPSHOT.jar ./
+WORKDIR /root/TDMS-api/server/
 
 EXPOSE 8080
 
