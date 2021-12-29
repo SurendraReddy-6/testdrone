@@ -6,8 +6,7 @@ steps:
 - name: build-new-api
   image: ramalingam81/ubuntu-java8:node-js
   commands:
-    - apt install nodejs -y
-    - npm run build 
+    - apt install nodejs -y 
     - cd server/
     - chmod +x ./gradlew
     - ./gradlew clean build
