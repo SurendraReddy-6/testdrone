@@ -8,7 +8,7 @@ steps:
   commands:
     - cd server/
     - chmod +x ./gradlew
-    - ./gradlew build
+    - ./gradlew clean build
     
 - name: publish
   image: plugins/ecr
