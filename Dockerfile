@@ -6,6 +6,8 @@ WORKDIR /root/TDMS-api/
 
 COPY . .
 
+WORKDIR /root/TDMS-api/server/
+
 EXPOSE 8080
 
 CMD ["java", "-jar", "vip-0.0.1-SNAPSHOT.jar"]
