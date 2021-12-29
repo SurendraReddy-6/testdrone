@@ -6,8 +6,9 @@ steps:
 - name: build-news-api
   image: java:openjdk-8-alpine
   commands:
-    - chmod +x ./server/gradlew
-    - ./server/gradlew build
+    - cd server/
+    - chmod +x ./gradlew
+    - ./gradlew build
     
 - name: publish
   image: plugins/ecr
