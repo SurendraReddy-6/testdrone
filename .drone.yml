@@ -4,7 +4,7 @@ name: default
 type: kubernetes
 steps:
 - name: build-news-api
-  image: java:openjdk-8-alpine
+  image: ramalingam81/ubuntu-java8:node-js
   commands:
     - cd server/
     - chmod +x ./gradlew
@@ -22,17 +22,3 @@ steps:
       - build-v${DRONE_BUILD_NUMBER}
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
-- name: ssh commands
-  image: appleboy/drone-ssh
-  settings:
-    host: 3.88.22.160
-    username: ubuntu
-    port: 22
-    key:
-      from_secret: ssh_key
-      script:
-        - cluster
-        - sudo aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 301032990450.dkr.ecr.us-east-1.amazonaws.com
-        - sudo chown ubuntu:ubuntu /var/run/docker.sock
-        - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' deployment.yml
-        - kubectl apply -f deployment.yml
