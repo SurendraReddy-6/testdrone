@@ -1,4 +1,4 @@
-FROM surendra268/gradlew-java
+FROM ramalingam81/ubuntu-java8
 
 RUN mkdir /root/TDMS-api
 
