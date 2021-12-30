@@ -36,6 +36,6 @@ steps:
   commands:
     - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
     - chmod +x /root/.kube/config
-    - kubectl create ns tdms
+#    - kubectl create ns tdms
     - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yaml
     - kubectl apply -f kubernetes/deployment.yaml
