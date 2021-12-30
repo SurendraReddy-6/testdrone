@@ -26,7 +26,7 @@ steps:
     
 - name: kubernetes_deploy
   image: ramalingam81/aws-kubectl-helm-kops
-  settings:
+  environment:
     KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
     AWS_ACCESS_KEY_ID:
       from_secret: aws_access_key_id
