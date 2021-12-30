@@ -18,6 +18,7 @@ steps:
       from_secret: aws_access_key_id
     secret_key:
       from_secret: aws_secret_access_key
+    Region: us-east-1a
     tags:
       - latest
       - build-v${DRONE_BUILD_NUMBER}
@@ -28,10 +29,11 @@ steps:
   image: ramalingam81/aws-kubectl-helm-kops
   settings:
     KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
-    access_key:
+    AWS_ACCESS_KEY_ID:
       from_secret: aws_access_key_id
-    secret_key:
+    AWS_SECRET_ACCESS_KEY:
       from_secret: aws_secret_access_key
+    AWS_DEFAULT_REGION: us-east-1
     commands:
       - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
       - chmod +x /root/.kube/config
