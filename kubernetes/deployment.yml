@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tdms-image
-          image: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail:build-v${DRONE_BUILD_NUMBER}
+          image: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail:latest
           ports:
             - containerPort: 8080
 
