@@ -25,7 +25,7 @@ steps:
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
     
 - name: kubernetes_deploy
-  image: surendra268/aws-kubectl-kops
+  image: ramalingam81/aws-kubectl-helm-kops
   settings:
     KOPS_STATE_STORE: "s3://kops.keep-smiley.ga"
     access_key:
