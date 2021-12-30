@@ -8,7 +8,9 @@ COPY . .
 
 WORKDIR /root/TDMS-api/server/
 
-RUN cp build/libs/server.jar .
+RUN ls
+
+RUN cp build/libs/server.jar . && ls
 
 RUN cp build/libs/server-plain.jar .
 
