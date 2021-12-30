@@ -28,6 +28,7 @@ metadata:
   name: tdms-service
   namespace: tdms
 spec:
+  type: NodePort
   selector:
     app: image
   ports:
