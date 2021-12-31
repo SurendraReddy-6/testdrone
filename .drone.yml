@@ -55,8 +55,8 @@ steps:
     - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
     - chmod +x /root/.kube/config
 #    - kubectl create ns tdms
-    - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yaml
-    - kubectl apply -f kubernetes/deployment.yaml
+    - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yml
+    - kubectl apply -f kubernetes/deployment.yml
 - name: kubernetes_deploy
   image: ramalingam81/aws-kubectl-helm-kops
   environment:
@@ -70,5 +70,5 @@ steps:
     - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
     - chmod +x /root/.kube/config
 #   - kubectl create ns tdms
-    - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' server/react/kubernetes/deployment.yaml
-    - kubectl apply -f server/react/kubernetes/deployment.yaml
+    - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' server/react/kubernetes/deployment.yml
+    - kubectl apply -f server/react/kubernetes/deployment.yml
