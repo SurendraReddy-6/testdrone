@@ -19,7 +19,7 @@ spec:
         - name: tdms-image
           image: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 1048
 
 ---
 apiVersion: v1
@@ -34,6 +34,6 @@ spec:
   ports:
   - protocol: TCP
     name: http
-    port: 8080
-    targetPort: 8080
+    port: 1048
+    targetPort: 1048
     nodePort: 30333
