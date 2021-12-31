@@ -10,12 +10,7 @@ steps:
     - cd server/
     - chmod +x ./gradlew
     - ./gradlew clean build
-- name: build-new-ui
-  image: ramalingam81/ubuntu-java8:node-js
-  repo: server/react/
-  commands:
-    - apt install nodejs -y
-    - npm build
+    
 - name: publish
   image: plugins/ecr
   settings:
@@ -28,7 +23,11 @@ steps:
       - build-v${DRONE_BUILD_NUMBER}
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com 
-    
+- name: build-new-ui
+  image: ramalingam81/ubuntu-java8:node-js
+  repo: server/react/
+  commands:
+    - npm build    
 - name: publish
   image: plugins/ecr
   settings:
