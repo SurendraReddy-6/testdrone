@@ -27,7 +27,9 @@ steps:
   image: ramalingam81/ubuntu-java8:node-js
   repo: server/react/
   commands:
-    - npm build    
+    - apt install nodejs -y
+    - cd server/react/
+    - npm run build    
 - name: publish_ui
   image: plugins/ecr
   settings:
