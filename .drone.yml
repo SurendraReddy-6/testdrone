@@ -57,7 +57,7 @@ steps:
 #    - kubectl create ns tdms
     - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yml
     - kubectl apply -f kubernetes/deployment.yml
-- name: kubernetes_deploy
+- name: kubernetes_deploy_ui
   image: ramalingam81/aws-kubectl-helm-kops
   environment:
     KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
