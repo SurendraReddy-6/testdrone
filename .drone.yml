@@ -28,7 +28,7 @@ steps:
   repo: server/react/
   commands:
     - npm build    
-- name: publish
+- name: publish_ui
   image: plugins/ecr
   settings:
     access_key:
