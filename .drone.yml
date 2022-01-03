@@ -3,29 +3,29 @@ kind: pipeline
 name: default
 type: kubernetes
 steps:
-- name: build-new-api
-  image: ramalingam81/ubuntu-java8:node-js
-  commands:
-    - apt install nodejs -y 
-    - cd server/
-    - chmod +x ./gradlew
-    - ./gradlew clean build
+#- name: build-new-api
+ # image: ramalingam81/ubuntu-java8:node-js
+  #commands:
+   # - apt install nodejs -y 
+    #- cd server/
+    #- chmod +x ./gradlew
+    #- ./gradlew clean build
     
-- name: publish
-  image: plugins/ecr
-  settings:
-    access_key:
-      from_secret: aws_access_key_id
-    secret_key:
-      from_secret: aws_secret_access_key
-    tags:
-      - latest
-      - build-v${DRONE_BUILD_NUMBER}
-    repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
-    registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com 
+#- name: publish
+ # image: plugins/ecr
+  #settings:
+   # access_key:
+    #  from_secret: aws_access_key_id
+    #secret_key:
+     # from_secret: aws_secret_access_key
+    #tags:
+     # - latest
+      #- build-v${DRONE_BUILD_NUMBER}
+    #repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/drone-trail
+    #registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com 
 - name: build-new-ui
   image: ramalingam81/ubuntu-java8:node-js
-  repo: server/react/
+  repo: server/react/Dockerfile
   commands:
     - apt install nodejs -y
     - cd server/react/
@@ -43,21 +43,21 @@ steps:
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/txui
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
     
-- name: kubernetes_deploy
-  image: ramalingam81/aws-kubectl-helm-kops
-  environment:
-    KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
-    AWS_ACCESS_KEY_ID:
-      from_secret: aws_access_key_id
-    AWS_SECRET_ACCESS_KEY:
-      from_secret: aws_secret_access_key
-    AWS_DEFAULT_REGION: us-east-1
-  commands:
-    - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
-    - chmod +x /root/.kube/config
+#- name: kubernetes_deploy
+ # image: ramalingam81/aws-kubectl-helm-kops
+  #environment:
+   # KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
+   # AWS_ACCESS_KEY_ID:
+    #  from_secret: aws_access_key_id
+    #AWS_SECRET_ACCESS_KEY:
+     # from_secret: aws_secret_access_key
+    #AWS_DEFAULT_REGION: us-east-1
+  #commands:
+   # - export KOPS_STATE_STORE=s3://k8s.keep-smiley.ga && kops export kubeconfig --name k8s.keep-smiley.ga --admin
+    #- chmod +x /root/.kube/config
 #    - kubectl create ns tdms
-    - sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yml
-    - kubectl apply -f kubernetes/deployment.yml
+    #- sed -i 's/latest/build-v${DRONE_BUILD_NUMBER}/g' kubernetes/deployment.yml
+    #- kubectl apply -f kubernetes/deployment.yml
 - name: kubernetes_deploy_ui
   image: ramalingam81/aws-kubectl-helm-kops
   environment:
