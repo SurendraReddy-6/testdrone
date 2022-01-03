@@ -6,13 +6,11 @@ WORKDIR /root/TDMS-api/
 
 COPY . .
 
-WORKDIR /root/TDMS-api/server/
-
 RUN ls
 
-RUN cp build/libs/server.jar . && ls
+RUN cp server/build/libs/server.jar . 
 
-RUN cp build/libs/server-plain.jar .
+RUN cp server/build/libs/server-plain.jar . && ls
 
 EXPOSE 1048
 
