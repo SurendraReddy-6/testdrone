@@ -39,7 +39,7 @@ steps:
     repo: 613098030734.dkr.ecr.us-east-1.amazonaws.com/txui
     registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com
 - name: kubernetes_deploy
- image: ramalingam81/aws-kubectl-helm-kops
+  image: ramalingam81/aws-kubectl-helm-kops
   environment:
     KOPS_STATE_STORE: "s3://k8s.keep-smiley.ga"
     AWS_ACCESS_KEY_ID:
