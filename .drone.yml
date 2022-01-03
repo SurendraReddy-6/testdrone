@@ -29,6 +29,7 @@ steps:
   commands:
     - apt install nodejs -y
     - cd server/react/
+    - sudo npm install
     - npm run build    
 - name: publish_ui
   image: plugins/ecr
