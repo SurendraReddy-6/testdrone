@@ -14,6 +14,6 @@ RUN cp build/libs/server.jar . && ls
 
 RUN cp build/libs/server-plain.jar .
 
-EXPOSE 8080
+EXPOSE 1048
 
 CMD ["java", "-jar", "server.jar"]
