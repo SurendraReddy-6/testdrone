@@ -6,12 +6,6 @@ RUN apt-get update
 
 RUN apt-get install apache2 -y
 
-RUN mkdir /root/TDMS-ui
-
-WORKDIR /root/TDMS-ui/
-
-COPY . .
-
 RUN rm -rf /var/www/html/*
 
 RUN cp build/* /var/www/html/ 
