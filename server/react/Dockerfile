@@ -8,7 +8,9 @@ RUN apt-get install apache2 -y
 
 RUN rm -rf /var/www/html/*
 
-RUN cp build/* /var/www/html/ 
+RUN ls
+
+RUN cp server/react/build/* /var/www/html/ 
 
 ENTRYPOINT ["usr/sbin/apache2ctl"]
 
