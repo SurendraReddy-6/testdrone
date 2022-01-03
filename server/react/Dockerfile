@@ -8,7 +8,7 @@ RUN apt-get install apache2 -y
 
 RUN rm -rf /var/www/html/*
 
-RUN ls
+WORKDIR /root/TDMS-api/
 
 RUN cp server/react/build/* /var/www/html/ 
 
