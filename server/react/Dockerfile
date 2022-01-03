@@ -6,11 +6,9 @@ RUN apt-get update
 
 RUN apt-get install apache2 -y
 
-WORKDIR /root/TDMS-api/
-
 RUN ls
 
-RUN cp ./server/react/build/. /var/www/html/ 
+COPY ./server/react/build/. /var/www/html/. 
 
 ENTRYPOINT ["usr/sbin/apache2ctl"]
 
