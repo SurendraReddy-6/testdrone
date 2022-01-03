@@ -25,7 +25,8 @@ steps:
     #registry: 613098030734.dkr.ecr.us-east-1.amazonaws.com 
 - name: build-new-ui
   image: ramalingam81/ubuntu-java8:node-js
-  repo: server/react/
+  settings:
+    repo: server/react/
   commands:
     - apt install nodejs -y
     - cd server/react/
